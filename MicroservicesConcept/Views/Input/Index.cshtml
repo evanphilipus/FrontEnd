@@ -1,0 +1,87 @@
+﻿@model tr_bpkb
+
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@*<table class="table table-bordered table-striped" style="width:100%">
+    <tr>
+        <th>
+            Agreement Number
+        </th>
+    </tr>
+</table>*@
+
+<form method="post">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                Agreement Number
+                <br />
+                <input asp-for="agreement_number" type="text" placeholder="Input Agreement Number" style="width:300px" class="form-control" />
+            </div>
+            <div class="col-sm-6">
+                Tanggal Faktur
+                <br />
+                <input asp-for="faktur_date" type="date" style="width:300px" class="form-control" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                Branch Id
+                <br />
+                <input asp-for="branch_id" type="text" placeholder="Input Branch Id" style="width:300px" class="form-control" />
+            </div>
+            <div class="col-sm-6">
+                Nomor Polisi
+                <br />
+                <input asp-for="police_no" type="text" placeholder="Input Nomor Polisi" style="width:300px" class="form-control" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                No. BPKB
+                <br />
+                <input asp-for="bpkb_no" type="text" placeholder="Input No. BPKB" style="width:300px" class="form-control" />
+            </div>
+            <div class="col-sm-6">
+                Lokasi Penyimpanan
+                <br />
+                <select style="width:300px" class="form-control">
+                    
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                Tanggal BPKB In
+                <br />
+                <input asp-for="bpkb_date_in" type="date" style="width:300px" class="form-control" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                Tanggal BPKB
+                <br />
+                <input asp-for="bpkb_date" type="date" style="width:300px" class="form-control" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                No. Faktur
+                <br />
+                <input asp-for="faktur_no" type="text" placeholder="Input No. Faktur" style="width:300px" class="form-control" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <br />
+                <button type="button" style="width:300px" class="btn btn-sm btn-warning">Cancel</button>
+            </div>
+            <div class="col-sm-6">
+                <br />
+                <button type="submit" style="width:300px" class="btn btn-sm btn-warning">Save</button>
+            </div>
+        </div>
+    </div>
+</form>
